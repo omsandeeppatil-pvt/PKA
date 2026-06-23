@@ -3,807 +3,894 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paritosh Khandelwal & Associates — Company Secretaries & Corporate Compliance Advisors</title>
+<meta name="description" content="Paritosh Khandelwal & Associates — ICSI Registered, Peer-Reviewed Company Secretaries in Pune. Expert corporate compliance, secretarial audit, ROC filings, FEMA advisory & company incorporation.">
+<meta name="keywords" content="Company Secretary Pune, CS Pune, Corporate Compliance Pune, Secretarial Audit, ROC Filings, FEMA Advisory, Company Incorporation, ICSI Registered, Corporate Governance">
+<meta name="author" content="Paritosh Khandelwal & Associates">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#213F7F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Paritosh Khandelwal & Associates — Company Secretaries & Corporate Compliance Advisors">
+<meta property="og:description" content="ICSI Registered, Peer-Reviewed firm of Company Secretaries in Pune. Corporate governance, ROC filings, secretarial audits, FEMA advisory and company incorporation.">
+<meta property="og:url" content="https://www.csparitoshkhandelwal.com">
+<meta property="og:image" content="assets/og-image.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paritosh Khandelwal & Associates — Company Secretaries Pune">
+<meta name="twitter:description" content="ICSI Registered, Peer-Reviewed CS Firm. Corporate governance, compliance & advisory services across India.">
+<link rel="canonical" href="https://www.csparitoshkhandelwal.com">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="apple-touch-icon" href="assets/logo.webp">
+<title>Paritosh Khandelwal & Associates — Company Secretaries & Corporate Compliance Advisors, Pune</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LegalService","name":"Paritosh Khandelwal & Associates","description":"ICSI Registered, Peer-Reviewed firm of Company Secretaries providing corporate governance, compliance and advisory services.","url":"https://www.csparitoshkhandelwal.com","logo":"https://www.csparitoshkhandelwal.com/assets/logo.webp","address":{"@type":"PostalAddress","streetAddress":"209, B Wing, Parmar Chambers, Sadhu Vaswani Chowk","addressLocality":"Pune","addressRegion":"Maharashtra","postalCode":"411001","addressCountry":"IN"},"telephone":"+918552022008","email":"Paritosh@csparitoshkhandelwal.com","areaServed":"IN","serviceType":["Company Secretary","Corporate Compliance","Secretarial Audit","ROC Filings","FEMA Advisory","Corporate Governance"]}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
---primary:#213F7F;
---secondary:#6589C7;
---bg:#FFFFFF;
+--blue:#213F7F;
+--blue-light:#6589C7;
+--navy:#0F1F40;
+--white:#FFFFFF;
+--off:#F7F8FA;
 --text:#111827;
 --muted:#6B7280;
 --border:#E5E7EB;
---navy:#0F1F40;
 --max:1280px;
+--pad:48px;
+--r:0px;
 }
-html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Inter',sans-serif;color:var(--text);background:var(--bg);line-height:1.7;overflow-x:hidden}
-h1,h2,h3,h4,h5{font-family:'Playfair Display',serif;line-height:1.2;font-weight:500}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);line-height:1.7;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;line-height:1.15;font-weight:600}
 a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}
 ul{list-style:none}
-button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none}
-input,textarea,select{font-family:'Inter',sans-serif}
+button,input,textarea,select{font-family:'DM Sans',sans-serif}
+button{cursor:pointer;border:none;background:none}
 
-#loader{
-position:fixed;inset:0;background:#fff;z-index:9999;
-display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
-transition:opacity 0.6s ease,visibility 0.6s ease;
-}
-#loader.hidden{opacity:0;visibility:hidden}
-.loader-monogram{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:500;color:var(--primary);letter-spacing:0.15em}
-.loader-name{font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:400;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted)}
-.loader-line{width:60px;height:1px;background:var(--border);margin-top:8px}
+#splash{position:fixed;inset:0;background:var(--white);z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity .6s ease,visibility .6s ease}
+#splash.gone{opacity:0;visibility:hidden;pointer-events:none}
+#splash img{width:100px;height:100px;object-fit:contain;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(.97);opacity:.8}50%{transform:scale(1.02);opacity:1}}
+@media(prefers-reduced-motion:reduce){#splash img{animation:none}}
 
-header{
-position:fixed;top:0;left:0;right:0;z-index:100;
-background:#fff;border-bottom:1px solid var(--border);
-height:72px;display:flex;align-items:center;
-}
-.header-inner{
-max-width:var(--max);margin:0 auto;padding:0 40px;
-width:100%;display:flex;align-items:center;justify-content:space-between;
-}
-.header-brand{display:flex;align-items:center;gap:14px;text-decoration:none}
-.header-logo{height:40px;width:auto;object-fit:contain}
-.header-brand-text{display:flex;flex-direction:column;gap:1px}
-.header-brand-name{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:var(--primary);line-height:1.2}
-.header-brand-sub{font-size:0.65rem;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)}
-nav{display:flex;align-items:center;gap:8px}
-nav a{font-size:0.8rem;font-weight:400;letter-spacing:0.06em;color:var(--muted);padding:8px 12px;transition:color 0.2s ease}
-nav a:hover{color:var(--primary)}
-.btn-consult{
-font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
-color:#fff;background:var(--primary);padding:10px 24px;
-border:1px solid var(--primary);transition:background 0.2s ease,color 0.2s ease;
-margin-left:12px;
-}
-.btn-consult:hover{background:transparent;color:var(--primary)}
+#disc{position:fixed;bottom:0;left:0;right:0;z-index:8000;background:var(--navy);transform:translateY(100%);transition:transform .35s ease}
+#disc.show{transform:translateY(0)}
+.disc-in{max-width:var(--max);margin:0 auto;padding:14px var(--pad);display:flex;align-items:center;gap:24px;justify-content:space-between}
+.disc-txt{font-size:.72rem;color:rgba(255,255,255,.68);line-height:1.6;max-width:900px}
+.disc-txt strong{color:#fff;font-weight:500}
+.disc-btn{font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);background:#fff;padding:10px 22px;border:1px solid #fff;white-space:nowrap;transition:background .2s,color .2s;flex-shrink:0}
+.disc-btn:hover{background:transparent;color:#fff}
 
-main{padding-top:72px}
+header{position:fixed;top:0;left:0;right:0;z-index:500;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--border);height:70px;display:flex;align-items:center}
+.h-in{max-width:var(--max);margin:0 auto;padding:0 var(--pad);width:100%;display:flex;align-items:center;justify-content:space-between}
+.h-brand{display:flex;align-items:center;gap:12px}
+.h-logo{width:38px;height:38px;object-fit:contain}
+.h-names{display:flex;flex-direction:column;gap:1px}
+.h-name{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:700;color:var(--blue);line-height:1.1;letter-spacing:.01em}
+.h-sub{font-size:.6rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;align-items:center;gap:4px}
+nav a{font-size:.78rem;font-weight:400;letter-spacing:.04em;color:var(--muted);padding:8px 14px;transition:color .2s}
+nav a:hover,nav a:focus{color:var(--blue)}
+.btn-nav{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--blue);padding:10px 22px;border:1px solid var(--blue);transition:background .2s,color .2s;margin-left:8px}
+.btn-nav:hover{background:transparent;color:var(--blue)}
 
-section{position:relative}
-.container{max-width:var(--max);margin:0 auto;padding:0 40px}
+main{padding-top:70px}
 
-.pka-bg{
-position:absolute;font-family:'Playfair Display',serif;font-size:18vw;font-weight:700;
-color:rgba(33,63,127,0.025);letter-spacing:-0.02em;user-select:none;pointer-events:none;
-line-height:1;z-index:0;
-}
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:400;display:flex;align-items:center;gap:0;background:#25D366;overflow:hidden;transition:width .25s ease,border-radius .25s ease,padding .25s ease;box-shadow:0 4px 20px rgba(37,211,102,.35);width:52px;height:52px;justify-content:center}
+.wa-float:hover{width:168px;padding:0 18px;justify-content:flex-start}
+.wa-float svg{flex-shrink:0;color:#fff}
+.wa-label{font-size:.75rem;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;max-width:0;transition:max-width .25s ease .04s,margin .25s ease;margin-left:0}
+.wa-float:hover .wa-label{max-width:120px;margin-left:10px}
 
-.hero{padding:120px 0 100px;overflow:hidden}
-.hero-inner{
-max-width:var(--max);margin:0 auto;padding:0 40px;
-display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;z-index:1;
-}
-.pka-bg-hero{top:50%;left:50%;transform:translate(-50%,-50%)}
-.hero-eyebrow{
-font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;
-color:var(--secondary);display:flex;align-items:center;gap:12px;margin-bottom:28px;
-}
-.hero-eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--secondary)}
-.hero h1{font-size:3.5rem;font-weight:500;color:var(--primary);margin-bottom:24px;line-height:1.1}
-.hero-sub{font-size:1rem;color:var(--muted);line-height:1.75;margin-bottom:16px;max-width:480px}
-.hero-para{font-size:0.875rem;color:var(--muted);line-height:1.8;margin-bottom:44px;max-width:480px}
-.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
-.btn-primary{
-font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
-color:#fff;background:var(--primary);padding:14px 32px;
-border:1px solid var(--primary);transition:background 0.2s ease,color 0.2s ease;
-}
-.btn-primary:hover{background:transparent;color:var(--primary)}
-.btn-outline{
-font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
-color:var(--primary);background:transparent;padding:14px 32px;
-border:1px solid var(--border);transition:border-color 0.2s ease,color 0.2s ease;
-}
-.btn-outline:hover{border-color:var(--primary)}
+.container{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 
-.hero-panel{border:1px solid var(--border);padding:0}
-.hero-panel-header{
-padding:28px 32px;border-bottom:1px solid var(--border);
-display:flex;align-items:center;justify-content:space-between;
-}
-.hero-panel-label{font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted)}
-.hero-panel-mono{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--secondary);font-style:italic}
-.hero-panel-list{padding:0}
-.hero-panel-item{
-padding:22px 32px;border-bottom:1px solid var(--border);
-display:flex;align-items:center;gap:20px;transition:background 0.2s ease;
-}
-.hero-panel-item:last-child{border-bottom:none}
-.hero-panel-item:hover{background:#f9fafb}
-.hero-item-num{font-size:0.65rem;font-weight:500;letter-spacing:0.12em;color:var(--secondary);min-width:28px}
-.hero-item-text{font-size:0.875rem;font-weight:500;color:var(--text)}
-.hero-item-arrow{margin-left:auto;color:var(--border)}
+.eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--blue-light);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--blue-light);flex-shrink:0}
 
-.credibility{padding:80px 0;border-top:1px solid var(--border)}
-.cred-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
-.cred-card{
-padding:44px 36px;border-right:1px solid var(--border);
-}
+.section-head{text-align:center;margin-bottom:60px}
+.section-head .eyebrow{justify-content:center;margin-bottom:16px}
+.section-head h2{font-size:2.8rem;color:var(--blue);margin:0 auto}
+.section-head p{font-size:.9rem;color:var(--muted);line-height:1.8;margin:.8rem auto 0;max-width:580px}
+
+.hero{padding:110px 0 96px;overflow:hidden;position:relative}
+.hero-bg-text{position:absolute;font-family:'Cormorant Garamond',serif;font-size:20vw;font-weight:700;color:rgba(33,63,127,.04);letter-spacing:-.03em;user-select:none;pointer-events:none;top:50%;left:50%;transform:translate(-50%,-48%);white-space:nowrap;z-index:0}
+.hero-in{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;position:relative;z-index:1}
+.hero-eye{font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue-light);display:flex;align-items:center;gap:10px;margin-bottom:24px}
+.hero-eye::before{content:'';display:block;width:28px;height:1px;background:var(--blue-light)}
+.hero h1{font-size:3.6rem;font-weight:600;color:var(--blue);margin-bottom:20px;line-height:1.08}
+.hero-lead{font-size:1rem;color:var(--muted);line-height:1.75;margin-bottom:12px;max-width:460px}
+.hero-body{font-size:.875rem;color:var(--muted);line-height:1.85;margin-bottom:40px;max-width:460px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn-prim{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--blue);padding:14px 30px;border:1px solid var(--blue);transition:background .2s,color .2s;display:inline-block}
+.btn-prim:hover{background:transparent;color:var(--blue)}
+.btn-sec{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);background:transparent;padding:14px 30px;border:1px solid var(--border);transition:border-color .2s;display:inline-block}
+.btn-sec:hover{border-color:var(--blue)}
+.hero-panel{border:1px solid var(--border);background:var(--white)}
+.hp-hd{padding:24px 28px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.hp-label{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.hp-mono{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--blue-light);font-style:italic}
+.hp-item{padding:20px 28px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:18px;transition:background .2s}
+.hp-item:last-child{border-bottom:none}
+.hp-item:hover{background:var(--off)}
+.hp-num{font-size:.6rem;font-weight:600;letter-spacing:.14em;color:var(--blue-light);min-width:24px;flex-shrink:0}
+.hp-text{font-size:.875rem;font-weight:500;color:var(--text)}
+.hp-arrow{margin-left:auto;color:var(--border);flex-shrink:0;transition:color .2s}
+.hp-item:hover .hp-arrow{color:var(--blue-light)}
+
+.cred{padding:72px 0;border-top:1px solid var(--border);background:var(--white)}
+.cred-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border)}
+.cred-card{padding:36px 32px;border-right:1px solid var(--border);text-align:center}
 .cred-card:last-child{border-right:none}
-.cred-icon{
-width:44px;height:44px;border:1px solid var(--border);
-display:flex;align-items:center;justify-content:center;margin-bottom:24px;color:var(--primary);
-}
-.cred-title{font-size:1rem;font-weight:600;color:var(--text);margin-bottom:10px;font-family:'Playfair Display',serif}
-.cred-desc{font-size:0.8rem;color:var(--muted);line-height:1.7}
+.cred-icon{width:44px;height:44px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--blue)}
+.cred-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--text);margin-bottom:8px}
+.cred-desc{font-size:.78rem;color:var(--muted);line-height:1.7}
 
-.about{padding:120px 0;border-top:1px solid var(--border)}
-.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-.about-image{
-aspect-ratio:4/5;background:#f3f4f6;border:1px solid var(--border);
-display:flex;align-items:center;justify-content:center;
-}
-.about-image-label{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--border)}
-.section-marker{
-display:flex;align-items:center;gap:12px;margin-bottom:24px;
-}
-.section-marker-mono{font-family:'Playfair Display',serif;font-size:0.75rem;font-style:italic;color:var(--secondary)}
-.section-marker-line{flex:1;height:1px;background:var(--border)}
-.about h2{font-size:2.6rem;color:var(--primary);margin-bottom:28px;line-height:1.15}
-.about-lead{font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:28px}
-.about-body{font-size:0.875rem;color:var(--muted);line-height:1.85;margin-bottom:40px}
-.founder-block{border-top:1px solid var(--border);padding-top:32px}
-.founder-name{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--text);margin-bottom:8px;font-weight:500}
-.founder-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.tag{
-font-size:0.65rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
-border:1px solid var(--border);padding:6px 14px;color:var(--muted);
-}
+.clients{border-top:1px solid var(--border);background:var(--off)}
+.clients-in{display:flex;align-items:stretch;min-height:64px}
+.clients-lbl{font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding:0 40px;display:flex;align-items:center;border-right:1px solid var(--border);white-space:nowrap;flex-shrink:0}
+.clients-tags{display:flex;flex:1}
+.c-tag{font-size:.68rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;border-right:1px solid var(--border);padding:0 20px;color:var(--text);background:var(--white);flex:1;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.4}
+.c-tag:last-child{border-right:none}
 
-.services{padding:120px 0;background:#f9fafb;border-top:1px solid var(--border)}
-.section-head{margin-bottom:64px}
-.section-eyebrow{
-font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;
-color:var(--secondary);display:flex;align-items:center;gap:12px;margin-bottom:20px;
-}
-.section-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--secondary)}
-.section-head h2{font-size:2.8rem;color:var(--primary);max-width:560px;line-height:1.1}
-.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border)}
-.service-card{
-padding:40px 32px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);
-background:#fff;transition:background 0.2s ease;
-}
-.service-card:hover{background:#f3f6fb}
-.service-card:nth-child(4n){border-right:none}
-.service-card:nth-child(n+5){border-bottom:none}
-.service-icon{
-width:40px;height:40px;display:flex;align-items:center;justify-content:center;
-color:var(--primary);margin-bottom:20px;
-}
-.service-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:var(--text);margin-bottom:10px}
-.service-desc{font-size:0.78rem;color:var(--muted);line-height:1.75}
+.about{padding:112px 0;border-top:1px solid var(--border);background:var(--white)}
+.about-in{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-img{background:var(--off);border:1px solid var(--border);overflow:hidden;min-height:80px;display:flex;align-items:center;justify-content:center}
+.about-img img{width:100%;height:80%;object-fit:cover}
+.about-content{display:flex;flex-direction:column}
+.sec-mark{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.sec-mark-m{font-family:'Cormorant Garamond',serif;font-size:.8rem;font-style:italic;color:var(--blue-light)}
+.sec-mark-l{flex:1;height:1px;background:var(--border)}
+.about h2{font-size:2.6rem;color:var(--blue);margin-bottom:24px}
+.about-lead{font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:20px}
+.about-body{font-size:.875rem;color:var(--muted);line-height:1.85;margin-bottom:28px}
+.vm{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border);margin-top:8px}
+.vm-b{padding:24px}
+.vm-b:first-child{border-right:1px solid var(--border)}
+.vm-lbl{font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-light);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.vm-lbl::before{content:'';width:14px;height:1px;background:var(--blue-light);display:block;flex-shrink:0}
+.vm-txt{font-size:.8rem;color:var(--muted);line-height:1.75}
 
-.practice{padding:120px 0;border-top:1px solid var(--border)}
-.practice-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-.practice-left h2{font-size:2.8rem;color:var(--primary);line-height:1.1;margin-bottom:24px}
-.practice-left p{font-size:0.875rem;color:var(--muted);line-height:1.85}
-.practice-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border)}
-.practice-item{
-padding:28px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);
-display:flex;align-items:flex-start;gap:14px;transition:background 0.2s ease;
-}
-.practice-item:hover{background:#f9fafb}
-.practice-item:nth-child(2n){border-right:none}
-.practice-item:nth-child(n+7){border-bottom:none}
-.practice-dot{width:4px;height:4px;background:var(--secondary);margin-top:8px;flex-shrink:0}
-.practice-name{font-size:0.875rem;font-weight:500;color:var(--text)}
-.practice-sub{font-size:0.75rem;color:var(--muted);margin-top:4px}
+.founders{padding:112px 0;background:var(--off);border-top:1px solid var(--border)}
+.founders-hd{margin-bottom:56px;text-align:center}
+.founders-hd h2{font-size:2.8rem;color:var(--blue);margin-bottom:12px}
+.founders-hd p{font-size:.875rem;color:var(--muted);line-height:1.8;max-width:540px;margin:0 auto}
+.founders-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border)}
+.f-card{display:grid;grid-template-columns:220px 1fr;border-right:1px solid var(--border);background:var(--white)}
+.f-card:last-child{border-right:none}
+.f-photo{background:#eef1f6;overflow:hidden;border-right:1px solid var(--border)}
+.f-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.f-info{padding:28px 24px;display:flex;flex-direction:column}
+.f-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--text);margin-bottom:4px}
+.f-role{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-light);margin-bottom:14px}
+.f-bio{font-size:.78rem;color:var(--muted);line-height:1.75;margin-bottom:14px}
+.f-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tag{font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--border);padding:5px 10px;color:var(--muted)}
+.f-contact{border-top:1px solid var(--border);padding-top:14px;margin-top:auto;display:flex;flex-direction:column;gap:7px}
+.f-contact a{font-size:.72rem;color:var(--muted);display:flex;align-items:center;gap:8px;transition:color .2s}
+.f-contact a:hover{color:var(--blue)}
 
-.why{padding:120px 0;background:#f9fafb;border-top:1px solid var(--border)}
-.why-inner{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start}
-.why-left h2{font-size:2.8rem;color:var(--primary);line-height:1.1;margin-bottom:20px}
-.why-left p{font-size:0.875rem;color:var(--muted);line-height:1.85}
-.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
-.why-item{
-padding:36px;border:1px solid var(--border);margin:-1px 0 0 -1px;
-background:#fff;transition:background 0.2s ease;
-}
+.services{padding:112px 0;background:var(--white);border-top:1px solid var(--border)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border)}
+.svc-card{padding:36px 28px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--white);transition:background .2s;display:flex;flex-direction:column;text-align:center;align-items:center}
+.svc-card:hover{background:var(--off)}
+.svc-card:nth-child(4n){border-right:none}
+.svc-card:nth-child(n+5){border-bottom:none}
+.svc-icon{width:42px;height:42px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--blue);margin:0 auto 18px}
+.svc-title{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--text);margin-bottom:8px}
+.svc-desc{font-size:.78rem;color:var(--muted);line-height:1.7}
+
+.certs{padding:112px 0;border-top:1px solid var(--border);background:var(--off)}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border)}
+.cert-card{padding:36px 30px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--white);transition:background .2s;text-align:center}
+.cert-card:hover{background:var(--off)}
+.cert-card:nth-child(3n){border-right:none}
+.cert-card:nth-child(n+4){border-bottom:none}
+.cert-num{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--border);font-weight:700;margin-bottom:12px;line-height:1}
+.cert-title{font-family:'Cormorant Garamond',serif;font-size:.95rem;font-weight:600;color:var(--text);margin-bottom:8px}
+.cert-desc{font-size:.78rem;color:var(--muted);line-height:1.7}
+
+.practice{padding:112px 0;border-top:1px solid var(--border);background:var(--white)}
+.prac-in{display:grid;grid-template-columns:1fr 1.6fr;gap:80px;align-items:center}
+.prac-left{display:flex;flex-direction:column}
+.prac-left h2{font-size:2.8rem;color:var(--blue);margin-bottom:20px;line-height:1.1}
+.prac-left p{font-size:.875rem;color:var(--muted);line-height:1.85}
+.prac-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border)}
+.prac-item{padding:22px 24px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:12px;transition:background .2s}
+.prac-item:hover{background:var(--off)}
+.prac-item:nth-child(2n){border-right:none}
+.prac-item:last-child,.prac-item:nth-last-child(2):nth-child(2n+1){border-bottom:none}
+.prac-dot{width:4px;height:4px;background:var(--blue-light);margin-top:9px;flex-shrink:0}
+.prac-name{font-size:.875rem;font-weight:500;color:var(--text)}
+.prac-sub{font-size:.73rem;color:var(--muted);margin-top:3px}
+
+.why{padding:112px 0;border-top:1px solid var(--border);background:var(--off)}
+.why-in{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:center}
+.why-left{display:flex;flex-direction:column}
+.why-left h2{font-size:2.8rem;color:var(--blue);line-height:1.1;margin-bottom:18px}
+.why-left p{font-size:.875rem;color:var(--muted);line-height:1.85}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border)}
+.why-item{padding:28px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--white);transition:background .2s;text-align:center}
 .why-item:hover{background:#f3f6fb}
-.why-num{font-family:'Playfair Display',serif;font-size:2rem;color:var(--border);font-weight:700;margin-bottom:16px;line-height:1}
-.why-title{font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:8px}
-.why-desc{font-size:0.78rem;color:var(--muted);line-height:1.75}
+.why-item:nth-child(2n){border-right:none}
+.why-item:nth-child(5),.why-item:nth-child(6){border-bottom:none}
+.why-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--border);font-weight:700;margin-bottom:12px;line-height:1}
+.why-title{font-size:.88rem;font-weight:600;color:var(--text);margin-bottom:6px}
+.why-desc{font-size:.76rem;color:var(--muted);line-height:1.7}
 
-.team{padding:120px 0;border-top:1px solid var(--border)}
-.team-inner{display:grid;grid-template-columns:380px 1fr;gap:80px;align-items:start}
-.team-card{border:1px solid var(--border)}
-.team-photo{
-aspect-ratio:3/4;background:#f3f4f6;
-display:flex;align-items:center;justify-content:center;
-border-bottom:1px solid var(--border);
-}
-.team-photo-label{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#d1d5db}
-.team-info{padding:32px}
-.team-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:500;color:var(--text);margin-bottom:6px}
-.team-role{font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--secondary);margin-bottom:20px}
-.team-bio{font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:20px}
-.team-right{padding-top:8px}
-.team-right h2{font-size:2.8rem;color:var(--primary);line-height:1.1;margin-bottom:24px}
-.team-right p{font-size:0.875rem;color:var(--muted);line-height:1.85;margin-bottom:48px}
-.team-placeholder{
-border:1px dashed var(--border);padding:44px;text-align:center;
-}
-.team-placeholder-text{font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--border)}
+.contact{padding:112px 0;background:var(--white);border-top:1px solid var(--border)}
+.con-in{display:grid;grid-template-columns:1fr 1.2fr;gap:96px;align-items:start}
+.con-info{display:flex;flex-direction:column}
+.con-info h2{font-size:2.8rem;color:var(--blue);line-height:1.1;margin-bottom:20px}
+.con-lead{font-size:.875rem;color:var(--muted);line-height:1.85;margin-bottom:36px}
+.con-dets{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border)}
+.con-det{padding:22px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.con-det:nth-child(2n){border-right:none}
+.con-det:nth-child(3),.con-det:nth-child(4){border-bottom:none}
+.con-lbl{font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-light);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.con-lbl::before{content:'';width:18px;height:1px;background:var(--blue-light);display:block;flex-shrink:0}
+.con-det p,.con-det a{font-size:.8rem;color:var(--muted);line-height:1.8;display:block;transition:color .2s}
+.con-det a:hover{color:var(--blue)}
+.con-form{background:var(--off);border:1px solid var(--border);padding:48px}
+.form-h{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--text);margin-bottom:6px;font-weight:600}
+.form-s{font-size:.8rem;color:var(--muted);margin-bottom:28px;line-height:1.7}
+.fr{margin-bottom:18px}
+.fr2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+label{display:block;font-size:.65rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+input,textarea,select{width:100%;border:1px solid var(--border);padding:11px 14px;font-size:.875rem;color:var(--text);background:var(--white);outline:none;transition:border-color .2s;resize:none;-webkit-appearance:none}
+input:focus,textarea:focus,select:focus{border-color:var(--blue)}
+textarea{min-height:110px}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-color:var(--white);padding-right:38px}
+.btn-submit{width:100%;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--blue);padding:14px;border:1px solid var(--blue);margin-top:6px;transition:background .2s,color .2s;cursor:pointer}
+.btn-submit:hover{background:transparent;color:var(--blue)}
 
-.contact{padding:120px 0;background:#f9fafb;border-top:1px solid var(--border)}
-.contact-inner{display:grid;grid-template-columns:1fr 1.2fr;gap:100px;align-items:start}
-.contact-info h2{font-size:2.8rem;color:var(--primary);line-height:1.1;margin-bottom:28px}
-.contact-info-lead{font-size:0.875rem;color:var(--muted);line-height:1.85;margin-bottom:52px}
-.contact-detail{margin-bottom:36px}
-.contact-detail-label{
-font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;
-color:var(--secondary);margin-bottom:12px;display:flex;align-items:center;gap:10px;
-}
-.contact-detail-label::before{content:'';display:block;width:20px;height:1px;background:var(--secondary)}
-.contact-detail p,.contact-detail a{font-size:0.875rem;color:var(--muted);line-height:1.9;display:block;transition:color 0.2s ease}
-.contact-detail a:hover{color:var(--primary)}
-.contact-form-wrap{background:#fff;border:1px solid var(--border);padding:52px}
-.form-title{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--text);margin-bottom:36px;font-weight:500}
-.form-row{margin-bottom:24px}
-.form-row-half{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
-label{display:block;font-size:0.7rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
-input,textarea{
-width:100%;border:1px solid var(--border);padding:12px 16px;
-font-size:0.875rem;color:var(--text);background:#fff;outline:none;
-transition:border-color 0.2s ease;resize:none;
-}
-input:focus,textarea:focus{border-color:var(--primary)}
-textarea{height:120px}
-.form-submit{
-width:100%;font-size:0.75rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;
-color:#fff;background:var(--primary);padding:15px 32px;border:1px solid var(--primary);
-margin-top:8px;transition:background 0.2s ease,color 0.2s ease;
-}
-.form-submit:hover{background:transparent;color:var(--primary)}
+.careers{padding:112px 0;border-top:1px solid var(--border);background:var(--off)}
+.car-in{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.car-left{display:flex;flex-direction:column}
+.car-left h2{font-size:2.8rem;color:var(--blue);line-height:1.1;margin-bottom:20px}
+.car-left p{font-size:.875rem;color:var(--muted);line-height:1.85}
+.car-vals{margin-top:28px;border:1px solid var(--border)}
+.car-val{padding:18px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:14px}
+.car-val:last-child{border-bottom:none}
+.car-dot{width:4px;height:4px;background:var(--blue-light);flex-shrink:0}
+.car-vtxt{font-size:.875rem;font-weight:500;color:var(--text)}
+.car-form{background:var(--white);border:1px solid var(--border);padding:44px}
 
-footer{background:var(--navy);color:#fff;padding:80px 0 40px}
-.footer-top{
-display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:60px;
-margin-bottom:60px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,0.1);
-}
-.footer-brand{display:flex;flex-direction:column;gap:16px}
-.footer-logo{height:36px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:0.85}
-.footer-brand-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:500;color:#fff}
-.footer-brand-sub{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);line-height:1.6}
-.footer-brand-desc{font-size:0.78rem;color:rgba(255,255,255,0.5);line-height:1.8;margin-top:4px}
-.footer-col-label{font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:20px}
-.footer-col ul{display:flex;flex-direction:column;gap:10px}
-.footer-col ul a{font-size:0.8rem;color:rgba(255,255,255,0.6);transition:color 0.2s ease}
-.footer-col ul a:hover{color:#fff}
-.footer-col p,.footer-col address{font-size:0.8rem;color:rgba(255,255,255,0.55);line-height:1.9;font-style:normal}
-.footer-col a{font-size:0.8rem;color:rgba(255,255,255,0.55);display:block;line-height:1.9;transition:color 0.2s ease}
-.footer-col a:hover{color:#fff}
-.footer-bottom{
-display:flex;align-items:center;justify-content:space-between;
-}
-.footer-copy{font-size:0.72rem;color:rgba(255,255,255,0.35);letter-spacing:0.04em}
-.footer-mono{
-font-family:'Playfair Display',serif;font-size:1.5rem;font-style:italic;
-color:rgba(255,255,255,0.1);letter-spacing:0.1em;
-}
+.map-wrap{border-top:1px solid var(--border)}
+.map-wrap iframe{display:block;width:100%;height:340px;border:none;filter:grayscale(20%)}
+
+footer{background:var(--navy);color:#fff;padding:56px 0 24px}
+.ft-in{text-align:center;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.1);display:flex;flex-direction:column;align-items:center;gap:14px}
+.ft-logo{height:42px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.88}
+.ft-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#fff}
+.ft-sub{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.ft-tag{font-family:'Cormorant Garamond',serif;font-size:.9rem;font-style:italic;color:rgba(255,255,255,.35)}
+.ft-soc{display:flex;gap:10px;margin-top:4px}
+.ft-soc a{width:34px;height:34px;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.45);transition:border-color .2s,color .2s}
+.ft-soc a:hover{border-color:rgba(255,255,255,.5);color:#fff}
+.ft-bot{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;padding-top:24px}
+.ft-copy{font-size:.7rem;color:rgba(255,255,255,.3);letter-spacing:.04em}
+.ft-mono{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;color:rgba(255,255,255,.12);letter-spacing:.12em}
 
 @media(max-width:1100px){
-.hero-inner{grid-template-columns:1fr;gap:48px}
+:root{--pad:32px}
+.hero-in{grid-template-columns:1fr;gap:48px}
 .hero h1{font-size:2.8rem}
-.cred-grid{grid-template-columns:repeat(2,1fr)}
+.cred-grid{grid-template-columns:1fr 1fr}
 .cred-card{border-bottom:1px solid var(--border)}
-.cred-card:nth-child(even){border-right:none}
-.about-inner,.practice-inner{grid-template-columns:1fr;gap:48px}
-.why-inner{grid-template-columns:1fr;gap:40px}
-.team-inner{grid-template-columns:1fr;gap:40px}
-.contact-inner{grid-template-columns:1fr;gap:48px}
-.footer-top{grid-template-columns:1fr 1fr;gap:40px}
-.services-grid{grid-template-columns:repeat(2,1fr)}
-.service-card:nth-child(2n){border-right:none}
-.service-card:nth-child(n+7){border-bottom:none}
+.cred-card:nth-child(2n){border-right:none}
+.about-in,.prac-in,.car-in,.con-in{grid-template-columns:1fr;gap:48px}
+.why-in{grid-template-columns:1fr;gap:40px}
+.svc-grid{grid-template-columns:1fr 1fr}
+.svc-card:nth-child(2n){border-right:none}
+.svc-card{border-bottom:1px solid var(--border)}
+.cert-grid{grid-template-columns:1fr 1fr}
+.cert-card:nth-child(2n){border-right:none}
+.founders-grid{grid-template-columns:1fr}
+.f-card{border-right:none;border-bottom:1px solid var(--border)}
+.f-card:last-child{border-bottom:none}
 }
+
 @media(max-width:768px){
-.header-inner{padding:0 24px}
-.container{padding:0 24px}
-.hero-inner{padding:0 24px}
-nav a{display:none}
-.hero{padding:80px 0 64px}
+:root{--pad:20px}
+nav a:not(.btn-nav){display:none}
+.h-sub{display:none}
+.hero{padding:72px 0 56px}
 .hero h1{font-size:2.2rem}
-.section-head h2,.about h2,.why-left h2,.practice-left h2,.team-right h2,.contact-info h2{font-size:2rem}
+.section-head h2,.about h2,.why-left h2,.prac-left h2,.con-info h2,.car-left h2,.cert-intro h2,.founders-hd h2{font-size:2rem}
 .cred-grid{grid-template-columns:1fr}
-.cred-card{border-right:none}
-.services-grid{grid-template-columns:1fr}
-.service-card{border-right:none}
-.service-card:nth-child(n+1){border-bottom:1px solid var(--border)}
-.service-card:last-child{border-bottom:none}
+.cred-card{border-right:none;border-bottom:1px solid var(--border)}
+.cred-card:last-child{border-bottom:none}
+.svc-grid{grid-template-columns:1fr}
+.svc-card{border-right:none}
+.svc-card:last-child{border-bottom:none}
 .why-grid{grid-template-columns:1fr}
-.footer-top{grid-template-columns:1fr}
-.form-row-half{grid-template-columns:1fr}
-.practice-grid{grid-template-columns:1fr}
-.practice-item:nth-child(2n){border-right:1px solid var(--border)}
-.practice-item:nth-child(n+7){border-bottom:1px solid var(--border)}
-.practice-item:last-child{border-bottom:none}
+.why-item{border-right:none}
+.fr2{grid-template-columns:1fr}
+.prac-grid{grid-template-columns:1fr}
+.prac-item{border-right:none}
+.prac-item:last-child{border-bottom:none}
+.cert-grid{grid-template-columns:1fr}
+.cert-card{border-right:none}
+.cert-card:last-child{border-bottom:none}
+.vm{grid-template-columns:1fr}
+.vm-b:first-child{border-right:none;border-bottom:1px solid var(--border)}
+.clients-in{flex-direction:column}
+.clients-lbl{padding:14px 20px;border-right:none;border-bottom:1px solid var(--border)}
+.clients-tags{flex-wrap:wrap}
+.c-tag{border-bottom:1px solid var(--border);min-height:44px;flex:1 1 40%}
+.con-form,.car-form{padding:28px 20px}
+.f-card{grid-template-columns:1fr}
+.f-photo{aspect-ratio:16/9;border-right:none;border-bottom:1px solid var(--border)}
+.con-dets{grid-template-columns:1fr}
+.con-det{border-right:none}
+.con-det:last-child{border-bottom:none}
+.disc-in{flex-direction:column;align-items:flex-start;gap:12px;padding:14px 20px}
+.wa-float{bottom:20px;right:20px}
 }
 </style>
 </head>
 <body>
 
-<div id="loader">
-<span class="loader-monogram">PKA</span>
-<span class="loader-name">Paritosh Khandelwal & Associates</span>
-<div class="loader-line"></div>
+<div id="splash">
+<img src="assets/logo.webp" alt="PKA" width="100" height="100" fetchpriority="high">
 </div>
 
+<div id="disc">
+<div class="disc-in">
+<p class="disc-txt"><strong>Website Disclaimer —</strong> This website is meant solely for information and not for advertisement, promotion or solicitation of any professional assignment. Paritosh Khandelwal &amp; Associates is a peer-reviewed firm registered with the Institute of Company Secretaries of India (ICSI), and the contents herein are in conformity with the ICSI Guidelines for Advertisement by Company Secretaries, 2020. ICSI does not own responsibility for any content or claims made on this website.</p>
+<button class="disc-btn" id="disc-ok" type="button">I Understand</button>
+</div>
+</div>
+
+<a href="https://wa.me/918552022008?text=Hello%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20discuss%20a%20compliance%20matter.%20Could%20we%20schedule%20a%20consultation%3F" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<span class="wa-label">Chat on WhatsApp</span>
+</a>
+
 <header>
-<div class="header-inner">
-<a href="#" class="header-brand">
-<img src="assets/logo.png" alt="Paritosh Khandelwal & Associates" class="header-logo">
-<div class="header-brand-text">
-<span class="header-brand-name">Paritosh Khandelwal & Associates</span>
-<span class="header-brand-sub">Company Secretaries & Corporate Compliance</span>
+<div class="h-in">
+<a href="#" class="h-brand" aria-label="Paritosh Khandelwal & Associates — Home">
+<img src="assets/logo.webp" alt="PKA Logo" class="h-logo" width="38" height="38">
+<div class="h-names">
+<span class="h-name">Paritosh Khandelwal &amp; Associates</span>
+<span class="h-sub">Company Secretaries &amp; Corporate Compliance</span>
 </div>
 </a>
-<nav>
+<nav aria-label="Primary navigation">
 <a href="#">Home</a>
 <a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#practice">Practice Areas</a>
-<a href="#team">Team</a>
+<a href="#careers">Careers</a>
 <a href="#contact">Contact</a>
-<a href="#contact" class="btn-consult">Schedule Consultation</a>
+<a href="#contact" class="btn-nav">Schedule Consultation</a>
 </nav>
 </div>
 </header>
 
 <main>
 
-<section class="hero">
-<span class="pka-bg pka-bg-hero">PKA</span>
-<div class="hero-inner">
+<section class="hero" aria-labelledby="hero-h1">
+<span class="hero-bg-text" aria-hidden="true">PKA</span>
+<div class="container">
+<div class="hero-in">
 <div class="hero-left">
-<div class="hero-eyebrow">Established Practice</div>
-<h1>Paritosh Khandelwal<br>&amp; Associates</h1>
-<p class="hero-sub">Company Secretaries, Corporate Compliance Advisors, and Governance Professionals serving businesses with precision, integrity, and regulatory excellence.</p>
-<p class="hero-para">Providing company secretarial services, corporate governance advisory, regulatory compliance support, legal documentation, and strategic corporate guidance for startups, private enterprises, and established businesses.</p>
-<div class="hero-cta">
-<a href="#contact" class="btn-primary">Schedule a Consultation</a>
-<a href="#services" class="btn-outline">Explore Services</a>
+<div class="hero-eye">ICSI Registered &amp; Peer-Reviewed Firm — Pune, India</div>
+<h1 id="hero-h1">Paritosh Khandelwal<br>&amp; Associates</h1>
+<p class="hero-lead">Navigating Compliance, Unleashing Success.</p>
+<p class="hero-body">A peer-reviewed firm of Company Secretaries providing legal, secretarial, compliance and strategic advisory services across industries — serving start-ups, SMEs, family offices and MNCs across India.</p>
+<div class="hero-ctas">
+<a href="#contact" class="btn-prim">Schedule a Consultation</a>
+<a href="#services" class="btn-sec">Explore Services</a>
 </div>
 </div>
 <div class="hero-right">
 <div class="hero-panel">
-<div class="hero-panel-header">
-<span class="hero-panel-label">Areas of Practice</span>
-<span class="hero-panel-mono">PKA</span>
+<div class="hp-hd">
+<span class="hp-label">Areas of Practice</span>
+<span class="hp-mono">PKA</span>
 </div>
-<ul class="hero-panel-list">
-<li class="hero-panel-item">
-<span class="hero-item-num">01</span>
-<span class="hero-item-text">Corporate Governance</span>
-<svg class="hero-item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+<ul>
+<li class="hp-item">
+<span class="hp-num">01</span>
+<span class="hp-text">Corporate Governance &amp; Secretarial Services</span>
+<svg class="hp-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
 </li>
-<li class="hero-panel-item">
-<span class="hero-item-num">02</span>
-<span class="hero-item-text">Company Law</span>
-<svg class="hero-item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+<li class="hp-item">
+<span class="hp-num">02</span>
+<span class="hp-text">Company Formation &amp; ROC Compliances</span>
+<svg class="hp-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
 </li>
-<li class="hero-panel-item">
-<span class="hero-item-num">03</span>
-<span class="hero-item-text">ROC Compliance</span>
-<svg class="hero-item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+<li class="hp-item">
+<span class="hp-num">03</span>
+<span class="hp-text">Secretarial Audits &amp; Compliance Reviews</span>
+<svg class="hp-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
 </li>
-<li class="hero-panel-item">
-<span class="hero-item-num">04</span>
-<span class="hero-item-text">Secretarial Audit</span>
-<svg class="hero-item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+<li class="hp-item">
+<span class="hp-num">04</span>
+<span class="hp-text">FEMA, RBI &amp; Regulatory Advisory</span>
+<svg class="hp-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
 </li>
-<li class="hero-panel-item">
-<span class="hero-item-num">05</span>
-<span class="hero-item-text">Legal Advisory</span>
-<svg class="hero-item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+<li class="hp-item">
+<span class="hp-num">05</span>
+<span class="hp-text">Corporate Restructuring &amp; Strategic Advisory</span>
+<svg class="hp-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
 </li>
 </ul>
 </div>
 </div>
 </div>
+</div>
 </section>
 
-<section class="credibility">
+<section class="cred" aria-label="Firm credentials">
 <div class="container">
 <div class="cred-grid">
 <div class="cred-card">
-<div class="cred-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="0"/><path d="M9 12l2 2 4-4"/></svg>
-</div>
-<div class="cred-title">Corporate Compliance</div>
-<p class="cred-desc">End-to-end compliance management under the Companies Act and applicable statutes, handled with methodical attention to procedural integrity.</p>
+<div class="cred-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18"/><path d="M9 12l2 2 4-4"/></svg></div>
+<div class="cred-title">ICSI Registered</div>
+<p class="cred-desc">Registered with the Institute of Company Secretaries of India, upholding ethical practice and technical credibility across every engagement.</p>
 </div>
 <div class="cred-card">
-<div class="cred-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/><rect x="3" y="3" width="18" height="18"/></svg>
-</div>
-<div class="cred-title">Governance Advisory</div>
-<p class="cred-desc">Structured board advisory and governance frameworks that align management practice with statutory responsibilities and best-practice standards.</p>
+<div class="cred-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M9 21V9"/></svg></div>
+<div class="cred-title">Peer-Reviewed Firm</div>
+<p class="cred-desc">A distinguished peer-reviewed practice maintaining structured governance frameworks and accountability at every level.</p>
 </div>
 <div class="cred-card">
-<div class="cred-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>
-</div>
-<div class="cred-title">Regulatory Expertise</div>
-<p class="cred-desc">Deep working knowledge of ROC, MCA, SEBI, and related regulatory bodies, enabling confident navigation of India's corporate compliance framework.</p>
+<div class="cred-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg></div>
+<div class="cred-title">Multi-Industry Advisory</div>
+<p class="cred-desc">Serving start-ups, SMEs, family offices and MNCs with cross-functional expertise and practical compliance knowledge.</p>
 </div>
 <div class="cred-card">
-<div class="cred-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-</div>
-<div class="cred-title">Client-Centric Service</div>
-<p class="cred-desc">Responsive, relationship-oriented advisory that prioritises the client's commercial objectives within a rigorously compliant operating environment.</p>
+<div class="cred-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+<div class="cred-title">Client-Centric Solutions</div>
+<p class="cred-desc">Tailored, practical guidance ensuring organisations meet regulatory requirements and business objectives efficiently.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section class="about" id="about">
+<section class="clients" aria-label="Client types">
 <div class="container">
-<div class="about-inner">
-<div class="about-image">
-<span class="about-image-label">Office Photograph</span>
+<div class="clients-in">
+<span class="clients-lbl">Clients We Serve</span>
+<div class="clients-tags">
+<span class="c-tag">Start-ups</span>
+<span class="c-tag">SMEs</span>
+<span class="c-tag">Family Offices</span>
+<span class="c-tag">MNCs</span>
+<span class="c-tag">Private Limited Companies</span>
+<span class="c-tag">LLPs</span>
+<span class="c-tag">Listed Entities</span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="about" id="about" aria-labelledby="about-h2">
+<div class="container">
+<div class="about-in">
+<div class="about-img">
+<img src="assets/office.webp" alt="Paritosh Khandelwal & Associates office in Pune" loading="lazy" width="500" height="280">
 </div>
 <div class="about-content">
-<div class="section-marker">
-<span class="section-marker-mono">PKA</span>
-<span class="section-marker-line"></span>
+<div class="sec-mark">
+<span class="sec-mark-m">PKA</span>
+<span class="sec-mark-l"></span>
 </div>
-<h2>A Firm Built on Precision and Professional Integrity</h2>
-<p class="about-lead">Paritosh Khandelwal & Associates is a company secretarial and corporate compliance practice based in Pune, serving businesses across India with specialist knowledge in company law, governance, and regulatory affairs.</p>
-<p class="about-body">The firm was established to provide structured, dependable secretarial and compliance support to businesses at every stage — from incorporation through to complex corporate transactions. Our practice is grounded in an understanding that compliance is not merely procedural; it is foundational to the long-term health and credibility of any business.</p>
-<p class="about-body">We serve startups, closely held private companies, and established enterprises, offering continuity of advice and hands-on support across all significant corporate events and regulatory requirements.</p>
-<div class="founder-block">
-<div class="founder-name">CS Paritosh Khandelwal</div>
-<p style="font-size:0.8rem;color:var(--muted);margin-top:6px;line-height:1.75">Founder and Principal, Paritosh Khandelwal & Associates. CS Paritosh Khandelwal brings rigorous professional training and practical experience to every client engagement, ensuring that advice is both legally sound and commercially grounded.</p>
-<div class="founder-tags">
-<span class="tag">Qualified Company Secretary</span>
-<span class="tag">Law Graduate</span>
+<h2 id="about-h2">A Firm Built on Precision and Professional Integrity</h2>
+<p class="about-lead">Paritosh Khandelwal &amp; Associates is a peer-reviewed firm of Company Secretaries, providing legal, secretarial, compliance and strategic advisory services to businesses across industries.</p>
+<p class="about-body">The firm specialises in Company Law, Corporate Law and Business Management consultancy, with deep expertise across Company Formation, ROC Compliances, Secretarial Audits, Corporate Governance and Regulatory Advisory. Registered with ICSI, the firm is committed to professional integrity, technical excellence and ethical practice.</p>
+<div class="vm">
+<div class="vm-b">
+<div class="vm-lbl">Vision</div>
+<p class="vm-txt">To be the trusted legal and compliance advisor, offering reliable, value-driven corporate governance solutions that support sustainable business growth.</p>
+</div>
+<div class="vm-b">
+<div class="vm-lbl">Mission</div>
+<p class="vm-txt">To deliver reliable secretarial, legal and advisory services that uphold the highest standards of corporate governance.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="founders" id="founders" aria-labelledby="founders-h2">
+<div class="container">
+<div class="founders-hd">
+<div class="eyebrow" style="justify-content:center;margin-bottom:14px">Led By</div>
+<h2 id="founders-h2">The Professionals Behind the Practice</h2>
+<p>Direct accountability to every client, with no layers of hierarchy and no delegation to junior associates.</p>
+</div>
+<div class="founders-grid">
+<article class="f-card">
+<div class="f-photo">
+<img src="assets/paritosh.webp" alt="CS Paritosh Khandelwal — Founder & Principal" loading="lazy" width="220" height="320">
+</div>
+<div class="f-info">
+<div class="f-name">CS Paritosh Khandelwal</div>
+<div class="f-role">Founder &amp; Principal</div>
+<p class="f-bio">A dynamic professional with a strong academic foundation in Commerce, Law and Corporate Governance. Known for strategic, value-driven solutions and for simplifying complex regulatory matters with clarity.</p>
+<div class="f-tags">
+<span class="tag">B.Com</span>
+<span class="tag">LL.B.</span>
+<span class="tag">ACS</span>
 <span class="tag">Certified CSR Professional</span>
 </div>
+<div class="f-contact">
+<a href="tel:+918552022008"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 85520 22008</a>
+<a href="mailto:Paritosh@csparitoshkhandelwal.com"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Paritosh@csparitoshkhandelwal.com</a>
 </div>
 </div>
+</article>
+<article class="f-card">
+<div class="f-photo">
+<img src="assets/akshada.webp" alt="CS Akshada Bhase — Working Partner" loading="lazy" width="220" height="320">
+</div>
+<div class="f-info">
+<div class="f-name">CS Akshada Bhase</div>
+<div class="f-role">Working Partner</div>
+<p class="f-bio">A qualified Company Secretary with hands-on experience in corporate compliance, SEBI regulations and regulatory advisory — with practical exposure to listed company compliances and board management.</p>
+<div class="f-tags">
+<span class="tag">M.Com</span>
+<span class="tag">ACS</span>
+</div>
+<div class="f-contact">
+<a href="tel:+919225533008"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 92255 33008</a>
+<a href="mailto:Akshada@csparitoshkhandelwal.com"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Akshada@csparitoshkhandelwal.com</a>
+</div>
+</div>
+</article>
 </div>
 </div>
 </section>
 
-<section class="services" id="services">
+<section class="services" id="services" aria-labelledby="svc-h2">
 <div class="container">
 <div class="section-head">
-<div class="section-eyebrow">Our Services</div>
-<h2>Professional Services for Every Stage of Your Business</h2>
+<div class="eyebrow">Corporate Governance &amp; Secretarial Services</div>
+<h2 id="svc-h2">Professional Services for Every Stage of Your Business</h2>
 </div>
-<div class="services-grid">
-<div class="service-card">
-<div class="service-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18"/><path d="M12 8v8M8 12h8"/></svg>
+<div class="svc-grid">
+<div class="svc-card">
+<div class="svc-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18"/><path d="M9 12l2 2 4-4"/></svg></div>
+<div class="svc-title">Corporate Governance Advisory</div>
+<p class="svc-desc">Advisory on governance and regulatory frameworks under the Companies Act, SEBI and RBI guidelines.</p>
 </div>
-<div class="service-title">Company Incorporation</div>
-<p class="service-desc">End-to-end incorporation services for private limited companies, LLPs, OPCs, and Section 8 companies, including name reservation, documentation, and post-incorporation compliance.</p>
+<div class="svc-card">
+<div class="svc-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><rect x="14" y="8" width="8" height="6"/></svg></div>
+<div class="svc-title">Board &amp; Shareholder Management</div>
+<p class="svc-desc">Meeting management including notices, agendas, resolutions and minutes drafting with statutory compliance.</p>
 </div>
-<div class="service-card">
-<div class="service-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><path d="M3 4h18v16H3z"/></svg>
+<div class="svc-card">
+<div class="svc-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/></svg></div>
+<div class="svc-title">Compliance Support</div>
+<p class="svc-desc">Maintenance of statutory registers, annual filings and ongoing secretarial support.</p>
 </div>
-<div class="service-title">ROC Compliance</div>
-<p class="service-desc">Preparation and filing of statutory returns, annual filings, event-based forms, and maintenance of statutory registers in accordance with the Companies Act, 2013.</p>
+<div class="svc-card">
+<div class="svc-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="svc-title">Risk &amp; Secretarial Audit</div>
+<p class="svc-desc">Independent secretarial audits, compliance reviews and due diligence assessments.</p>
 </div>
-<div class="service-card">
-<div class="service-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+<div class="svc-card">
+<div class="svc-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+<div class="svc-title">Strategic Advisory</div>
+<p class="svc-desc">Corporate restructuring guidance, listing compliances and stakeholder management.</p>
 </div>
-<div class="service-title">Corporate Governance</div>
-<p class="service-desc">Board secretarial support, meeting management, agenda preparation, minutes drafting, and advisory on board composition and committee governance.</p>
+<div class="svc-card">
+<div class="svc-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="svc-title">ROC &amp; MCA Filings</div>
+<p class="svc-desc">Preparation and filing of statutory forms and returns with the Registrar of Companies.</p>
 </div>
-<div class="service-card">
-<div class="service-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 17H7a5 5 0 0 1 0-10h4M13 7h4a5 5 0 0 1 0 10h-4M8 12h8"/></svg>
+<div class="svc-card">
+<div class="svc-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 17H7a5 5 0 0 1 0-10h4M13 7h4a5 5 0 0 1 0 10h-4M8 12h8"/></svg></div>
+<div class="svc-title">Event-Based Compliances</div>
+<p class="svc-desc">Handling director changes, share allotments and other event-triggered compliances.</p>
 </div>
-<div class="service-title">Secretarial Audit</div>
-<p class="service-desc">Independent secretarial audit under Section 204 of the Companies Act for prescribed companies, providing assurance on compliance with applicable laws, rules, and regulations.</p>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-</div>
-<div class="service-title">Corporate Legal Advisory</div>
-<p class="service-desc">Legal drafting, vetting, and advisory on corporate documents including shareholder agreements, board resolutions, and statutory filings requiring legal precision.</p>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>
-</div>
-<div class="service-title">Share Capital & Securities</div>
-<p class="service-desc">Advisory and compliance for share issuance, transfer, transmission, buyback, and private placement, including maintenance of share records and the register of members.</p>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-</div>
-<div class="service-title">Mergers & Amalgamations</div>
-<p class="service-desc">Secretarial and compliance support for mergers, demergers, amalgamations, and acquisitions, including drafting of schemes, filing, and regulatory liaison.</p>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-</div>
-<div class="service-title">Regulatory Representation</div>
-<p class="service-desc">Representation before the Registrar of Companies, National Company Law Tribunal, and other regulatory bodies on matters of statutory compliance and corporate law.</p>
+<div class="svc-card">
+<div class="svc-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18"/><path d="M8 12h8M12 8v8"/></svg></div>
+<div class="svc-title">Company Incorporation</div>
+<p class="svc-desc">End-to-end incorporation of private limited companies, LLPs, OPCs and Section 8 companies.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section class="practice" id="practice">
+<section class="certs" id="certifications" aria-labelledby="cert-h2">
 <div class="container">
-<div class="practice-inner">
-<div class="practice-left">
-<div class="section-eyebrow">Practice Areas</div>
-<h2>Deep Expertise Across Corporate Law and Compliance</h2>
-<p>Our practice is structured around the core disciplines of company law, regulatory compliance, and governance, allowing us to offer specialist knowledge across each of these domains to clients with varying complexity and scale.</p>
+<div class="section-head">
+<div class="eyebrow">Certification &amp; Advisory</div>
+<h2 id="cert-h2">Trusted Certifications Across Regulatory Domains</h2>
+<p>As qualified Company Secretaries, we issue legally recognised certifications and advisory opinions across compliance and transactional matters, providing assurance to investors, regulators and counterparties.</p>
 </div>
-<div class="practice-right">
-<div class="practice-grid">
-<div class="practice-item">
-<span class="practice-dot"></span>
-<div>
-<div class="practice-name">Corporate Law</div>
-<div class="practice-sub">Companies Act 2013 and rules thereunder</div>
+<div class="cert-grid">
+<div class="cert-card">
+<div class="cert-num">01</div>
+<div class="cert-title">ROC &amp; Annual Filing Certifications</div>
+<p class="cert-desc">Certification of annual returns and statutory filings for accuracy and regulatory compliance.</p>
 </div>
+<div class="cert-card">
+<div class="cert-num">02</div>
+<div class="cert-title">Secretarial Compliance Certification</div>
+<p class="cert-desc">Compliance certificates confirming adherence to the Companies Act and SEBI regulations.</p>
 </div>
-<div class="practice-item">
-<span class="practice-dot"></span>
-<div>
-<div class="practice-name">Board Governance</div>
-<div class="practice-sub">Board structure, meetings, and secretarial support</div>
+<div class="cert-card">
+<div class="cert-num">03</div>
+<div class="cert-title">FEMA &amp; RBI Certifications</div>
+<p class="cert-desc">Certification of foreign investment transactions and FEMA reporting compliance.</p>
 </div>
+<div class="cert-card">
+<div class="cert-num">04</div>
+<div class="cert-title">Corporate Governance &amp; Listing Certifications</div>
+<p class="cert-desc">Certifications for governance practices and SEBI disclosures under LODR Regulations.</p>
 </div>
-<div class="practice-item">
-<span class="practice-dot"></span>
-<div>
-<div class="practice-name">Secretarial Compliance</div>
-<div class="practice-sub">Periodic and event-based statutory compliance</div>
+<div class="cert-card">
+<div class="cert-num">05</div>
+<div class="cert-title">Due Diligence &amp; Verification Reports</div>
+<p class="cert-desc">Review and verification of corporate, legal and compliance records for investors and acquirers.</p>
 </div>
-</div>
-<div class="practice-item">
-<span class="practice-dot"></span>
-<div>
-<div class="practice-name">Regulatory Filings</div>
-<div class="practice-sub">MCA, SEBI, and ROC filings and returns</div>
-</div>
-</div>
-<div class="practice-item">
-<span class="practice-dot"></span>
-<div>
-<div class="practice-name">Corporate Restructuring</div>
-<div class="practice-sub">Mergers, demergers, and business reorganisation</div>
-</div>
-</div>
-<div class="practice-item">
-<span class="practice-dot"></span>
-<div>
-<div class="practice-name">Legal Documentation</div>
-<div class="practice-sub">Agreements, resolutions, and corporate records</div>
-</div>
-</div>
-<div class="practice-item">
-<span class="practice-dot"></span>
-<div>
-<div class="practice-name">Due Diligence</div>
-<div class="practice-sub">Secretarial and legal due diligence for transactions</div>
-</div>
-</div>
-<div class="practice-item">
-<span class="practice-dot"></span>
-<div>
-<div class="practice-name">Business Advisory</div>
-<div class="practice-sub">Structuring and strategic corporate guidance</div>
-</div>
-</div>
-</div>
+<div class="cert-card">
+<div class="cert-num">06</div>
+<div class="cert-title">Foreign Investment, ECB &amp; ODI</div>
+<p class="cert-desc">Advisory on FEMA and RBI compliance for foreign investments and overseas direct investments.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section class="why" id="why">
+<section class="practice" id="practice" aria-labelledby="prac-h2">
 <div class="container">
-<div class="why-inner">
+<div class="prac-in">
+<div class="prac-left">
+<div class="eyebrow" style="margin-bottom:16px">Practice Areas</div>
+<h2 id="prac-h2">Deep Expertise Across Corporate Law and Compliance</h2>
+<p>Our practice is structured around company law, regulatory compliance and governance — offering specialist knowledge across each domain, from incorporation through complex corporate transactions.</p>
+</div>
+<div class="prac-grid">
+<div class="prac-item"><span class="prac-dot"></span><div><div class="prac-name">Corporate Law</div><div class="prac-sub">Companies Act 2013 and rules thereunder</div></div></div>
+<div class="prac-item"><span class="prac-dot"></span><div><div class="prac-name">Board Governance</div><div class="prac-sub">Board structure, meetings and secretarial support</div></div></div>
+<div class="prac-item"><span class="prac-dot"></span><div><div class="prac-name">Secretarial Compliance</div><div class="prac-sub">Periodic and event-based statutory compliance</div></div></div>
+<div class="prac-item"><span class="prac-dot"></span><div><div class="prac-name">Regulatory Filings</div><div class="prac-sub">MCA, SEBI and ROC filings and returns</div></div></div>
+<div class="prac-item"><span class="prac-dot"></span><div><div class="prac-name">FEMA &amp; RBI Compliance</div><div class="prac-sub">Foreign investment and exchange control advisory</div></div></div>
+<div class="prac-item"><span class="prac-dot"></span><div><div class="prac-name">Corporate Restructuring</div><div class="prac-sub">Mergers, demergers and business reorganisation</div></div></div>
+<div class="prac-item"><span class="prac-dot"></span><div><div class="prac-name">Legal Documentation</div><div class="prac-sub">Agreements, resolutions and corporate records</div></div></div>
+<div class="prac-item"><span class="prac-dot"></span><div><div class="prac-name">Due Diligence</div><div class="prac-sub">Secretarial and legal due diligence for transactions</div></div></div>
+<div class="prac-item"><span class="prac-dot"></span><div><div class="prac-name">LLP &amp; Company Incorporation</div><div class="prac-sub">Formation, structuring and post-incorporation compliances</div></div></div>
+<div class="prac-item"><span class="prac-dot"></span><div><div class="prac-name">CSR Compliance</div><div class="prac-sub">Advisory on CSR obligations and regulatory requirements</div></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="why" id="why" aria-labelledby="why-h2">
+<div class="container">
+<div class="why-in">
 <div class="why-left">
-<div class="section-eyebrow">Why Clients Choose Us</div>
-<h2>What Distinguishes Our Practice</h2>
+<div class="eyebrow" style="margin-bottom:16px">Why Clients Choose Us</div>
+<h2 id="why-h2">What Distinguishes Our Practice</h2>
 <p>We do not make broad claims about transformation or market leadership. Clients engage us because our work is reliable, our advice is grounded, and our professional standards are consistent.</p>
 </div>
-<div class="why-right">
 <div class="why-grid">
 <div class="why-item">
 <div class="why-num">I</div>
-<div class="why-title">Professional Integrity</div>
-<p class="why-desc">Our advice is offered without conflict of interest. We maintain the independence and professional standards expected of qualified company secretaries.</p>
+<div class="why-title">Peer-Reviewed Expertise</div>
+<p class="why-desc">A distinguished peer-reviewed firm maintaining professional integrity and technical excellence across all engagements.</p>
 </div>
 <div class="why-item">
 <div class="why-num">II</div>
-<div class="why-title">Regulatory Expertise</div>
-<p class="why-desc">Years of focused practice in corporate law and compliance have produced a depth of knowledge that generalist advisors cannot replicate.</p>
+<div class="why-title">Comprehensive Services</div>
+<p class="why-desc">End-to-end secretarial, compliance, legal and strategic advisory under one roof.</p>
 </div>
 <div class="why-item">
 <div class="why-num">III</div>
 <div class="why-title">Timely Execution</div>
-<p class="why-desc">Statutory deadlines do not negotiate. Our systems are structured to ensure that filings and compliance obligations are met within the prescribed timelines.</p>
+<p class="why-desc">Statutory deadlines do not negotiate. Our systems ensure filings are met within prescribed timelines.</p>
 </div>
 <div class="why-item">
 <div class="why-num">IV</div>
-<div class="why-title">Confidential Handling</div>
-<p class="why-desc">All client information is handled with the confidentiality obligations that professional practice demands and that our clients rely upon.</p>
+<div class="why-title">Client-Centric Approach</div>
+<p class="why-desc">Tailored guidance ensuring organisations meet regulatory and governance objectives.</p>
 </div>
 <div class="why-item">
 <div class="why-num">V</div>
-<div class="why-title">Personalised Guidance</div>
-<p class="why-desc">Each client receives direct access to a qualified professional, not a junior associate, ensuring that advice is accurate and contextually relevant.</p>
+<div class="why-title">ICSI Registered</div>
+<p class="why-desc">Offering advice without conflict of interest and with full professional independence.</p>
 </div>
 <div class="why-item">
 <div class="why-num">VI</div>
-<div class="why-title">Long-Term Relationships</div>
-<p class="why-desc">We work with clients across multiple years and corporate events, building an understanding of their structures that informs better, more efficient advice.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="team" id="team">
-<div class="container">
-<div class="team-inner">
-<div>
-<div class="team-card">
-<div class="team-photo">
-<span class="team-photo-label">Photograph</span>
-</div>
-<div class="team-info">
-<div class="team-name">CS Paritosh Khandelwal</div>
-<div class="team-role">Founder & Principal</div>
-<p class="team-bio">A qualified Company Secretary and law graduate, CS Paritosh Khandelwal founded the firm to offer focused, specialist corporate compliance advisory. He holds a certification in CSR and brings extensive experience in company law, board governance, and regulatory compliance.</p>
-<div class="founder-tags">
-<span class="tag">ACS</span>
-<span class="tag">LLB</span>
-<span class="tag">CSR Professional</span>
-</div>
-</div>
-</div>
-</div>
-<div class="team-right">
-<div class="section-eyebrow">Our Team</div>
-<h2>The People Behind the Practice</h2>
-<p>Our firm is structured around qualified professionals with direct accountability to each client. We do not route client relationships through layers of hierarchy — the professional you engage with is the professional handling your work.</p>
-<div class="team-placeholder">
-<span class="team-placeholder-text">Additional team profiles may be added here</span>
+<div class="why-title">Multi-Industry Experience</div>
+<p class="why-desc">Building long-term relationships across multiple corporate events and industries.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
 
-<section class="contact" id="contact">
+<section class="contact" id="contact" aria-labelledby="con-h2">
 <div class="container">
-<div class="contact-inner">
-<div class="contact-info">
-<div class="section-eyebrow">Contact</div>
-<h2>Get in Touch with Our Practice</h2>
-<p class="contact-info-lead">We welcome enquiries from businesses at any stage. Whether you require ongoing secretarial support, compliance advisory, or guidance on a specific corporate matter, we are available to assist.</p>
-<div class="contact-detail">
-<div class="contact-detail-label">Address</div>
-<p>209, "B" Wing, Parmar Chambers<br>Sadhu Vaswani Chowk<br>Pune 411001</p>
+<div class="con-in">
+<div class="con-info">
+<div class="eyebrow" style="margin-bottom:16px">Contact</div>
+<h2 id="con-h2">Get in Touch with Our Practice</h2>
+<p class="con-lead">We welcome enquiries from businesses at any stage. Whether you require ongoing secretarial support, compliance advisory or guidance on a specific corporate matter, we are available to assist.</p>
+<div class="con-dets">
+<div class="con-det">
+<div class="con-lbl">Office Address</div>
+<p>209, "B" Wing, Parmar Chambers<br>Sadhu Vaswani Chowk<br>Pune — 411001</p>
 </div>
-<div class="contact-detail">
-<div class="contact-detail-label">Email</div>
+<div class="con-det">
+<div class="con-lbl">CS Paritosh Khandelwal</div>
+<a href="tel:+918552022008">+91 85520 22008</a>
 <a href="mailto:Paritosh@csparitoshkhandelwal.com">Paritosh@csparitoshkhandelwal.com</a>
+</div>
+<div class="con-det">
+<div class="con-lbl">CS Akshada Bhase</div>
+<a href="tel:+919225533008">+91 92255 33008</a>
+<a href="mailto:Akshada@csparitoshkhandelwal.com">Akshada@csparitoshkhandelwal.com</a>
+</div>
+<div class="con-det">
+<div class="con-lbl">General Enquiries</div>
+<a href="tel:+919270543866">+91 92705 43866</a>
 <a href="mailto:Team@csparitoshkhandelwal.com">Team@csparitoshkhandelwal.com</a>
 </div>
-<div class="contact-detail">
-<div class="contact-detail-label">Phone</div>
-<a href="tel:8552022008">8552022008</a>
-<a href="tel:9225533008">9225533008</a>
 </div>
 </div>
-<div class="contact-form-wrap">
-<div class="form-title">Schedule a Consultation</div>
-<div class="form-row-half">
-<div>
-<label for="name">Name</label>
-<input type="text" id="name" placeholder="Your full name">
+<div class="con-form">
+<div class="form-h">Schedule a Consultation</div>
+<p class="form-s">Share your details and we will be in touch to arrange a suitable time.</p>
+<div class="fr2">
+<div><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name"></div>
+<div><label for="email">Email</label><input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email"></div>
 </div>
-<div>
-<label for="email">Email</label>
-<input type="email" id="email" placeholder="your@email.com">
+<div class="fr2">
+<div><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" autocomplete="tel"></div>
+<div><label for="org">Organisation</label><input type="text" id="org" name="org" placeholder="Company name" autocomplete="organization"></div>
 </div>
+<div class="fr">
+<label for="service">Service Required</label>
+<select id="service" name="service">
+<option value="" disabled selected>Select a service</option>
+<option>Corporate Governance Advisory</option>
+<option>ROC &amp; MCA Compliance</option>
+<option>Secretarial Audit</option>
+<option>Company Incorporation</option>
+<option>FEMA &amp; RBI Compliance</option>
+<option>Due Diligence</option>
+<option>Corporate Restructuring</option>
+<option>Other</option>
+</select>
 </div>
-<div class="form-row-half">
-<div>
-<label for="phone">Phone</label>
-<input type="tel" id="phone" placeholder="+91 00000 00000">
-</div>
-<div>
-<label for="org">Organisation</label>
-<input type="text" id="org" placeholder="Company name">
-</div>
-</div>
-<div class="form-row">
+<div class="fr">
 <label for="msg">Message</label>
-<textarea id="msg" placeholder="Briefly describe the matter you would like to discuss"></textarea>
+<textarea id="msg" name="msg" placeholder="Briefly describe the matter you would like to discuss"></textarea>
 </div>
-<button class="form-submit" type="button">Send Enquiry</button>
+<button class="btn-submit" type="button" id="contact-submit">Send Enquiry</button>
 </div>
 </div>
 </div>
 </section>
+
+<section class="careers" id="careers" aria-labelledby="car-h2">
+<div class="container">
+<div class="car-in">
+<div class="car-left">
+<div class="eyebrow" style="margin-bottom:16px">Join Our Team</div>
+<h2 id="car-h2">Build Your Career in Corporate Compliance</h2>
+<p>We are always open to hearing from motivated professionals who share our commitment to technical excellence and client-focused advisory. If you are a Company Secretary, law graduate or compliance professional looking to grow in a structured environment, we would like to hear from you.</p>
+<div class="car-vals">
+<div class="car-val"><span class="car-dot"></span><span class="car-vtxt">Professional growth in a peer-reviewed, ICSI-registered firm</span></div>
+<div class="car-val"><span class="car-dot"></span><span class="car-vtxt">Exposure to multi-industry clients and complex compliance matters</span></div>
+<div class="car-val"><span class="car-dot"></span><span class="car-vtxt">Mentorship from qualified Company Secretaries and law professionals</span></div>
+<div class="car-val"><span class="car-dot"></span><span class="car-vtxt">Structured environment with clear accountability and timely execution</span></div>
+</div>
+</div>
+<div class="car-form">
+<div class="form-h">Apply to Join Our Team</div>
+<p class="form-s">Submit your details and we will be in touch if a suitable opportunity arises.</p>
+<div class="fr2">
+<div><label for="c-name">Full Name</label><input type="text" id="c-name" name="c-name" placeholder="Your full name" autocomplete="name"></div>
+<div><label for="c-email">Email Address</label><input type="email" id="c-email" name="c-email" placeholder="your@email.com" autocomplete="email"></div>
+</div>
+<div class="fr2">
+<div><label for="c-phone">Phone</label><input type="tel" id="c-phone" name="c-phone" placeholder="+91 00000 00000" autocomplete="tel"></div>
+<div><label for="c-role">Area of Interest</label>
+<select id="c-role" name="c-role">
+<option value="" disabled selected>Select area</option>
+<option>Company Secretarial Practice</option>
+<option>Corporate Compliance</option>
+<option>FEMA &amp; RBI Compliance</option>
+<option>Legal Advisory</option>
+<option>Other</option>
+</select></div>
+</div>
+<div class="fr">
+<label for="c-qual">Qualifications</label>
+<input type="text" id="c-qual" name="c-qual" placeholder="e.g. ACS, LLB, M.Com">
+</div>
+<div class="fr">
+<label for="c-msg">Brief Introduction</label>
+<textarea id="c-msg" name="c-msg" placeholder="Tell us about your background, experience and what you are looking for"></textarea>
+</div>
+<button class="btn-submit" type="button" id="career-submit">Submit Application</button>
+</div>
+</div>
+</div>
+</section>
+
+<div class="map-wrap">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.0259826099207!2d73.8633!3d18.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07b63d68af9%3A0xa0af9e59f4ef7050!2sGVGG%2B8F%2C+Pune%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1720000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Paritosh Khandelwal & Associates — 209 Parmar Chambers, Sadhu Vaswani Chowk, Pune 411001"></iframe>
+</div>
 
 </main>
 
 <footer>
 <div class="container">
-<div class="footer-top">
-<div class="footer-brand">
-<img src="assets/logo.png" alt="Paritosh Khandelwal & Associates" class="footer-logo">
-<div>
-<div class="footer-brand-name">Paritosh Khandelwal & Associates</div>
-<div class="footer-brand-sub">Company Secretaries & Corporate Compliance Advisors</div>
-</div>
-<p class="footer-brand-desc">A company secretarial and corporate compliance practice based in Pune, serving businesses across India with specialist knowledge in company law, governance, and regulatory affairs.</p>
-</div>
-<div class="footer-col">
-<div class="footer-col-label">Navigation</div>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#practice">Practice Areas</a></li>
-<li><a href="#team">Team</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<div class="footer-col-label">Services</div>
-<ul>
-<li><a href="#services">Company Incorporation</a></li>
-<li><a href="#services">ROC Compliance</a></li>
-<li><a href="#services">Corporate Governance</a></li>
-<li><a href="#services">Secretarial Audit</a></li>
-<li><a href="#services">Legal Advisory</a></li>
-<li><a href="#services">Mergers & Amalgamations</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<div class="footer-col-label">Contact</div>
-<address>
-209, "B" Wing, Parmar Chambers<br>
-Sadhu Vaswani Chowk<br>
-Pune 411001
-</address>
-<a href="mailto:Paritosh@csparitoshkhandelwal.com" style="margin-top:12px">Paritosh@csparitoshkhandelwal.com</a>
-<a href="mailto:Team@csparitoshkhandelwal.com">Team@csparitoshkhandelwal.com</a>
-<a href="tel:8552022008" style="margin-top:8px">8552022008</a>
-<a href="tel:9225533008">9225533008</a>
+<div class="ft-in">
+<img src="assets/logo.webp" alt="Paritosh Khandelwal & Associates" class="ft-logo" width="42" height="42" loading="lazy">
+<div class="ft-name">Paritosh Khandelwal &amp; Associates</div>
+<div class="ft-sub">Company Secretaries &amp; Corporate Compliance Advisors</div>
+<div class="ft-tag">Navigating Compliance, Unleashing Success</div>
+<div class="ft-soc">
+<a href="#" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+</a>
+<a href="https://wa.me/918552022008?text=Hello%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20discuss%20a%20compliance%20matter.%20Could%20we%20schedule%20a%20consultation%3F" aria-label="WhatsApp" rel="noopener noreferrer" target="_blank">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 </div>
 </div>
-<div class="footer-bottom">
-<span class="footer-copy">&copy; 2025 Paritosh Khandelwal & Associates. All rights reserved.</span>
-<span class="footer-mono">PKA</span>
+<div class="ft-bot">
+<span class="ft-copy">&copy; 2026 Paritosh Khandelwal &amp; Associates. All rights reserved.</span>
+<span class="ft-mono">PKA</span>
 </div>
 </div>
 </footer>
 
 <script>
+(function(){
+var splash=document.getElementById('splash');
+var disc=document.getElementById('disc');
+var discOk=document.getElementById('disc-ok');
+
 window.addEventListener('load',function(){
 setTimeout(function(){
-document.getElementById('loader').classList.add('hidden');
-},900);
+splash.classList.add('gone');
+if(!localStorage.getItem('pka-disc')){disc.classList.add('show')}
+},800);
 });
+
+discOk.addEventListener('click',function(){
+disc.classList.remove('show');
+localStorage.setItem('pka-disc','1');
+});
+
+function sendWA(name,phone,service,msg){
+var text='Hello, my name is '+name+'. I am reaching out regarding: '+service+'. '+msg+' My phone number is '+phone+'.';
+window.open('https://wa.me/918552022008?text='+encodeURIComponent(text),'_blank','noopener,noreferrer');
+}
+
+document.getElementById('contact-submit').addEventListener('click',function(){
+var name=document.getElementById('name').value.trim();
+var phone=document.getElementById('phone').value.trim();
+var service=document.getElementById('service').value||'General Enquiry';
+var msg=document.getElementById('msg').value.trim()||'I would like to schedule a consultation.';
+if(!name){alert('Please enter your name.');return}
+sendWA(name,phone,service,msg);
+});
+
+document.getElementById('career-submit').addEventListener('click',function(){
+var name=document.getElementById('c-name').value.trim();
+var phone=document.getElementById('c-phone').value.trim();
+var role=document.getElementById('c-role').value||'General Application';
+var intro=document.getElementById('c-msg').value.trim()||'I am interested in joining your team.';
+if(!name){alert('Please enter your name.');return}
+var text='Hello, I am '+name+' and I am interested in the '+role+' role at PKA. '+intro+' My contact number is '+phone+'.';
+window.open('https://wa.me/918552022008?text='+encodeURIComponent(text),'_blank','noopener,noreferrer');
+});
+})();
 </script>
 </body>
 </html>
